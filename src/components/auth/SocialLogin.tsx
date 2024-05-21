@@ -1,12 +1,10 @@
 import React from 'react';
 import { FacebookLogin, FacebookLoginAuthResponse } from 'react-facebook-login-lite';
-import { facebookLogin, googleLogin } from '../../redux/actions/authAction';
+import { facebookLogin } from '../../redux/actions/authAction';
 import { useDispatch } from 'react-redux';
 
 function SocialLogin() {
     const dispatch = useDispatch();
-
-    // google
 
     // facebook
     const onFbSuccess = (response: FacebookLoginAuthResponse) => {
