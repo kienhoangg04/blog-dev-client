@@ -57,7 +57,7 @@ export const getHomeBlogs = () => async (dispatch: Dispatch<IAlertType | IGetHom
 
         dispatch({ type: ALERT, payload: { loading: false } });
     } catch (error: any) {
-        // dispatch({ type: ALERT, payload: { errors: error.response.data.msg } });
+        dispatch({ type: ALERT, payload: { errors: error.response.data.msg } });
     }
 };
 
