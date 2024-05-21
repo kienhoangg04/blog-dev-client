@@ -43,7 +43,7 @@ export const getCategories = () => async (dispatch: Dispatch<IAlertType | ICateg
 
         dispatch({ type: ALERT, payload: { loading: false } });
     } catch (error: any) {
-        dispatch({ type: ALERT, payload: { errors: error.response.data.msg } });
+        // dispatch({ type: ALERT, payload: { errors: error.response.data.msg } });
     }
 };
 
