@@ -59,7 +59,7 @@ function Menu() {
                     >
                         <img src={auth.user.avatar} alt="avatar" className="avatar" />
                     </span>
-                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{top: '44px', left: '-84px'}}>
                         <li>
                             <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>
                                 Profile
