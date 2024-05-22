@@ -89,12 +89,11 @@ const DisplayBlog: React.FC<IProps> = ({ blog }) => {
             </h2>
 
             <div style={{ display: 'flex', justifyContent: 'space-between' , flexDirection: 'column'}}>
-                {/* <LikeComponent dataHref={`http://localhost:3000/blog/${blog._id}`} /> */}
-                <LikeComponent dataHref="" />
                 <div className="text-end fst-italic" style={{ color: 'teal' }}>
                     <small>{typeof blog.user !== 'string' && `By: ${blog.user.name}`}</small>
                     <small className="ms-2">{new Date(blog.createdAt).toLocaleString()}</small>
                 </div>
+                <LikeComponent dataHref={`https://blogcanhan.online/blog/${blog._id}`} />
             </div>
 
             <div
