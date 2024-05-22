@@ -38,6 +38,7 @@ code {
 
 p img {
     width: 100%;
+    image-rendering: pixelated;
 }
 iframe {
     width: 100%;

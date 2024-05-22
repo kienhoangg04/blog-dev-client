@@ -88,7 +88,7 @@ const DisplayBlog: React.FC<IProps> = ({ blog }) => {
                 {blog.title}
             </h2>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between' , flexDirection: 'column'}}>
                 {/* <LikeComponent dataHref={`http://localhost:3000/blog/${blog._id}`} /> */}
                 <LikeComponent dataHref="" />
                 <div className="text-end fst-italic" style={{ color: 'teal' }}>
